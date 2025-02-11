@@ -47,7 +47,7 @@ if (reminder === 0) {
 
 let n3 = 3
 
-if (n1 + n3 === 8) {
+if (n1 + n3 === 8 || n1 === 8 || n3 === 8 || n1 - n3 === 8 || n3 - n1 === 8) {
   console.log('la somma delle variabili n1 e n3 è 8')
 }
 
@@ -61,7 +61,7 @@ if (n1 + n3 === 8) {
 
 let totalShoppingCart = 50
 
-let shippingCost = totalShoppingCart >= 50 ? 0 : 10
+let shippingCost = totalShoppingCart > 50 ? 0 : 10
 
 console.log('Il costo delle spese di spedizione oggi è di ' + shippingCost)
 
@@ -74,8 +74,8 @@ console.log('Il costo delle spese di spedizione oggi è di ' + shippingCost)
 
 let today = 'Black Friday'
 
-if (today === 'Black Friday' && shippingCost === 0) {
-  console.log('Oggi è il Black Friday! Avrai uno sconto del 20%!')
+if (today === 'Black Friday') {
+  console.log('Oggi è il Black Friday! Avrai uno sconto del 20%!, il totale è ' + ((totalShoppingCart * 0.8) + shippingCost))
 }
 
 /* ESERCIZIO 7
